@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🌿 TextUtils - Modern Text Analysis & Transformation Suite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20on%20GitHub%20Pages-059669?style=for-the-badge&logo=github)](https://juhipuri024.github.io/TextUtils/)
+[![React 18](https://img.shields.io/badge/React-18.2.0-10b981?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-059669?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![License](https://img.shields.io/badge/License-MIT-gray?style=for-the-badge)](LICENSE)
 
-## Available Scripts
+A developer-grade, full-featured text studio and real-time analyzer engineered with **React 18**, **Vite**, and **custom CSS design tokens**. Designed with an eye-catching **Emerald Green & Crisp White** light theme and an **Obsidian Neon-Mint** dark mode.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Live Demo
+🔗 **[Launch TextUtils on GitHub Pages](https://juhipuri024.github.io/TextUtils/)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Key Features & Capabilities
 
-### `npm test`
+### 🎨 Dual Theme System (Tailored for UX)
+- **Light Mode:** Modern Emerald Green (`#059669`), Mint accents, and crisp card surfaces.
+- **Dark Mode:** Deep obsidian-emerald backdrop (`#080d0a`), luminous neon-mint glows, high-contrast readable text.
+- **Persistence:** Real-time theme toggle persisted in `localStorage`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔄 Multi-Level Undo & Redo
+- Built-in **30-level history stack** allowing instant recovery (`Undo` / `Redo`) from any transformation or edit.
 
-### `npm run build`
+### 🔤 Comprehensive Case Conversions
+- **UPPERCASE** & **lowercase**
+- **Title Case** (Capitalize Each Word)
+- **Sentence case** (Grammatically capitalized based on punctuation)
+- **Developer Formats:** `camelCase`, `PascalCase`, `snake_case`, `kebab-case`
+- **Invert Case**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🧹 Text Sanitization & Utilities
+- Remove redundant whitespace & extra spaces
+- Strip unwanted newline breaks
+- Remove HTML tags (`<tag>` stripping)
+- Alphabetical line sorting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 Real-Time Analytics & Metrics
+- Accurate **Word Count** (regex-powered whitespace filtering)
+- **Total Characters** vs **Characters (excluding spaces)**
+- **Sentence & Paragraph Counts**
+- **Estimated Reading Time** (~200 WPM)
+- **Estimated Speaking Cadence** (~133 WPM)
+- **Reading Level Indicator** (Conversational, Standard, or Academic)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔊 Interactive Web APIs & Tools
+- **Speech Synthesis (Text-to-Speech):** Listen to text with Play, Pause, Resume, and Stop controls with dynamic audio wave animations.
+- **Find & Replace:** Search with live occurrence counters and batch replacement.
+- **Data Extractors:** Instant extraction of Emails, URLs, and Numbers with one-click copy.
+- **File Import/Export:** Import `.txt` / `.md` files or export transformed documents.
+- **Clipboard Management:** One-click copy with floating toast alerts.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🛠️ Tech Stack & Architecture
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend Framework:** React 18 (Functional Components, Hooks: `useState`, `useEffect`, `useRef`)
+- **Build System:** Vite 5 (Sub-second HMR & optimized production tree-shaking)
+- **Design & Layout:** Custom CSS Custom Properties Design Tokens + Bootstrap 5.3 Grid & Icons
+- **Web APIs:**
+  - `SpeechSynthesis` (Web Speech API)
+  - `Clipboard API` (`navigator.clipboard`)
+  - `FileReader API` (Client-side file intake)
+- **CI/CD:** Automated GitHub Actions pipeline to GitHub Pages on `main` push.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 💻 Local Setup & Development
 
-## Learn More
+```bash
+# 1. Clone the repository
+git clone https://github.com/juhipuri024/TextUtils.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 2. Navigate to project root
+cd TextUtils
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 3. Install dependencies
+npm install
 
-### Code Splitting
+# 4. Start local development server
+npm run dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 5. Build for production
+npm run build
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👤 Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Juhi Puri**
+- GitHub: [@juhipuri024](https://github.com/juhipuri024)
